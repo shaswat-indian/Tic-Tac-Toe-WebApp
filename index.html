@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<title>Tic-Tac-Toe</title>
+		<link href=t1.css type=text/css rel=stylesheet>
+
+		<script type=text/javascript src=tt3.js></script>
+		
+	</head>
+
+
+	<body style=background-color:brown>
+
+		
+
+		<h1 id=ttt style=text-align:center >Tic-Tac-Toe</h1><hr>
+
+		<h4 id=start style=color:blue >Player 1 to Begin!</h4>
+		<h4 id=gameno style=color:#ff2 >Game: 1</h4>
+		<h4 id=winner style=color:white ></h4><br>
+
+	
+		
+		<table style=width:100%>
+			<tr>
+			<td><h3 id=p1name></h3><input type=text id=p1score value=0 class=score disabled></td>
+			<td colspan=80%>
+			
+			<table border=1px style=width:300px style=height:300px>
+				<tr>
+					<td id=11 onclick=myfunc(this) ></td>
+					<td id=12 onclick=myfunc(this) ></td>
+					<td id=13 onclick=myfunc(this) ></td>
+				</tr>
+	
+				<tr>
+					<td id=21 onclick=myfunc(this) ></td>
+					<td id=22 onclick=myfunc(this) ></td>
+					<td id=23 onclick=myfunc(this) ></td>
+				</tr>
+	
+				<tr>
+					<td id=31 onclick=myfunc(this) ></td>
+					<td id=32 onclick=myfunc(this) ></td>
+					<td id=33 onclick=myfunc(this) ></td>
+				</tr>
+			
+			</table>
+			</td>
+	
+		
+			<td><h3 id=p2name></h3><input type=text id=p2score value=0 class=score disabled></td>
+	
+		</table>
+
+		<center>
+			<h2 id=over></h2><br>
+			<button onclick=clearall() id=clearbutton hidden>Reset</button>	
+		</center>	
+			
+	
+
+	</body>
+
+</html>
+
